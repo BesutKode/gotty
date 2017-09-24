@@ -3,7 +3,7 @@ MAINTAINER steven.rachman@gmail.com
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x \
   | bash - \
-  && apt-get install --no-install-recommends -y npm=(none)
+  && apt-get install --no-install-recommends -y npm=none
 
 RUN go get github.com/jteeuwen/go-bindata/... \
   && go get github.com/tools/godep
