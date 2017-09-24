@@ -3,7 +3,7 @@ LABEL maintainer="steven.rachman@gmail.com"
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x \
   | bash - \
-  && apt-get install --no-install-recommends -y npm=3.5.2-0ubuntu4
+  && apt-get install --no-install-recommends -y npm
 
 RUN go get github.com/jteeuwen/go-bindata/... \
   && go get github.com/tools/godep
