@@ -1,5 +1,5 @@
 FROM golang:1.9
-LABEL maintainer="steven.rachman@gmail.com"
+MAINTAINER steven.rachman@gmail.com
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x \
   | bash - \
