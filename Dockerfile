@@ -3,7 +3,7 @@ MAINTAINER steven.rachman@gmail.com
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x \
   | bash - \
-  && apt-get install --no-install-recommends -y npm
+  && apt-get install --no-install-recommends -y npm=(none)
 
 RUN go get github.com/jteeuwen/go-bindata/... \
   && go get github.com/tools/godep
@@ -16,5 +16,5 @@ EXPOSE 8080
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV PATH $PATH:/usr/games
-RUN apt-get install --no-install-recommends -y cmatrix sl
+RUN apt-get install --no-install-recommends -y cmatrix=1.2a-5+b2 sl=3.03-17build1
 CMD ["./gotty", "cmatrix"]
