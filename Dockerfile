@@ -16,5 +16,5 @@ EXPOSE 8080
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 ENV PATH $PATH:/usr/games
-RUN apt-get install --no-install-recommends -y cmatrix=1.2a-5build2 sl=3.03-17build1
+RUN apt-get install --no-install-recommends -y cmatrix sl
 CMD ["./gotty", "cmatrix"]
