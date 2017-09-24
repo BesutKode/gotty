@@ -1,0 +1,7 @@
+gotty
+bindata
+builds
+js/node_modules/*
+.git
+.github
+Dockerfile
